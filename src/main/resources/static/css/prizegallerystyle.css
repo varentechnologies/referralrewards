@@ -1,0 +1,435 @@
+/*Main*/
+.level {
+    margin-top: 40px;
+}
+
+.imgcontainer{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.imgcontainer .overlaycontainer:hover:not(.inactive){
+    border-color: #FF4545;
+    box-shadow: 0 0 20px 10px #FF4545;
+    cursor: pointer;
+}
+
+.captions{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.captions p{
+    width: 20%;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: .9em;
+}
+
+.level .eligible{
+    text-align: center;
+    font-size: .9em;
+    font-family: Verdana, Arial, sans-serif;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -5px;
+    font-weight: bold;
+    color: #229954;
+
+}
+.eligible {
+    text-align: center;
+    font-size: .9em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+#popup .eligible{
+    color: lightgreen;
+}
+
+.level .noteligible{
+    text-align: center;
+    font-size: .9em;
+    font-family: Verdana, Arial, sans-serif;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -5px;
+    background-color: #D5D8DC;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 5px;
+}
+.noteligible{
+    text-align: center;
+    font-size: .9em;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 5px;
+}
+#popup .noteligible{
+    color: #ff6666;
+    font-weight: bold;
+}
+
+/*Pop Up*/
+#popup, #deliverypopup{
+    width: 60%;
+    height: 70vh;
+    position: fixed;
+    left: 20%;
+    top: 15vh;
+    background-color: dimgray;
+    z-index: 1000;
+    border: 5px solid black;
+    display: none;
+    overflow-y: scroll;
+}
+.close{
+    width: 5%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.close:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px 4px white;
+    background-color: white;
+}
+
+.details{
+    width: 40%;
+    margin-left: 50%;
+    clear: none;
+    padding: 40px;
+}
+
+.details h1{
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 2em;
+    margin: 20% 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+.details p{
+    color: white;
+    font-family: Courier, Serif;
+    font-size: 1em;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.details button {
+    display: block;
+    margin-top: 10%;
+    font-family: Verdana, Arial, sans-serif;
+    width: 40%;
+    font-size: 1em;
+    text-align: center;
+    height: 5vh;
+    border-radius: 10px;
+}
+#popup .noteligible, #popup .eligible{
+    margin-top: 25px;
+}
+#redeem{
+    color: white;
+    background-color: #FF4545;
+    transition: background-color .3s ease-in;
+    min-width: 200px;
+}
+#noclick{
+    background-color:#D5D8DC;
+    color:darkgray;
+    transition:none;
+}
+
+#redeem:hover{
+    font-weight: bold;
+    background-color: red;
+    box-shadow: 0 0 15px 4px #FF4545;
+    cursor: pointer;
+}
+
+#noclick:hover{
+    background-color:#D5D8DC;
+    color: darkgray;
+    transition:none;
+    box-shadow:none;
+    cursor:default;
+}
+
+.largerimg{
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#largerimg{
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#deliverypopup{
+    height: 80vh;
+}
+
+#deliverypopup h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    margin-left: 0;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+#mailinginfo h2, #pickupinfo h2{
+    color: black;
+    border: none;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+#deliverypopup label{
+    color: white;
+    font-family: Courier, Serif;
+    font-size: 1em;
+}
+
+#deliverypopup input{
+    margin-left: 35%;
+    margin-bottom: 10px;
+}
+
+#deliverypopup input:hover{
+    cursor: pointer;
+}
+#deliverypopup p{
+    font-family: Courier, Serif;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    display: none;
+}
+
+#submitdeliverymethod{
+    width: 8%;
+    margin-left: 46%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #FF4545;
+    height: 3vh;
+    font-size: 1em;
+}
+
+#submitdeliverymethod:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#mailinginfo, #pickupinfo{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    bottom: 5vh;
+    left: 15%;
+    background-color: white;
+    display: none;
+    border-radius: 10px;
+}
+
+#mailinginfo label, #pickupinfo label{
+    color: black;
+    font-family: Courier, Serif;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 10%;
+}
+#mailinginfo input, #pickupinfo input{
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    clear: none;
+}
+#homedeliveryinfo input:hover, #managerinfo input:hover{
+    cursor: pointer;
+}
+#homedeliveryinfo input:focus, #managerinfo input:focus{
+    outline-color:red;
+}
+#mailinginfo input[type='submit'], #pickupinfo input[type="submit"]{
+    background-color: #FF4545;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 46%;
+    font-weight: normal;
+    width: 8%;
+}
+#mailinginfo input[type='submit']:hover, #pickupinfo input[type="submit"]:hover{
+    background-color: red;
+}
+#mailinginfo .left{
+    position: relative;
+    left: 40%;
+    top: -150px;
+}
+
+
+/*Images*/
+#lev1prize1{
+    background-image: url("../images/lev1prize1.jpg");
+}
+
+#lev1prize2{
+    background-image: url("../images/lev1prize2.jpg");
+
+}
+
+#lev1prize3{
+    background-image: url("../images/lev1prize3.jpg");
+}
+
+#lev1prize4{
+    background-image: url("../images/lev1prize4.png");
+}
+
+#lev2prize1{
+    background-image: url("../images/lev2prize1.jpg");
+}
+
+#lev2prize2{
+    background-image: url("../images/lev2prize2.jpg");
+}
+
+#lev2prize3{
+    background-image: url("../images/lev2prize3.jpg");
+}
+
+#lev2prize4{
+    background-image: url("../images/lev2prize4.jpg");
+}
+
+#lev3prize1{
+    background-image: url("../images/lev3prize1.jpg");
+}
+#lev3prize2{
+    background-image: url("../images/lev3prize2.jpg");
+}
+#lev3prize3{
+    background-image: url("../images/lev3prize3.jpg");
+}
+#lev3prize4{
+    background-image: url("../images/lev3prize4.jpg");
+}
+
+#lev4prize1{
+    background-image: url("../images/lev4prize1.jpg");
+}
+#lev4prize2{
+    background-image: url("../images/lev4prize2.jpg")
+}
+
+#lev4prize3{
+    background-image: url("../images/lev4prize3.jpg");
+}
+#lev4prize4{
+    background-image: url("../images/lev4prize4.jpg");
+}
+
+#lev5prize1{
+    background-image: url("../images/lev5prize1.jpg");
+}
+#lev5prize2{
+    background-image: url("../images/lev5prize2.jpg");
+}
+#lev5prize3{
+    background-image: url("../images/lev5prize3.jpg");
+}
+#lev5prize4{
+    background-image: url("../images/lev5prize4.jpg");
+}
+
+#lev6prize1{
+    background-image: url("../images/lev6prize1.jpg");
+}
+#lev6prize2{
+    background-image: url("../images/lev6prize2.jpg");
+}
+#lev6prize3{
+    background-image: url("../images/lev6prize3.jpg");
+}
+#lev6prize4{
+    background-image: url("../images/lev6prize4.jpg");
+}
+
+/*Overlay*/
+.overlaycontainer{
+    position: relative;
+    width: 20%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 4px solid dimgray;
+    border-radius: 10px;
+    transition: all .15s ease-in-out;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(100, 100, 100, 0.95);
+}
+
+.overlaycontainer:hover:not(.inactive) .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-family: Courier, Serif;
+    position: absolute;
+    font-size: 1.1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
+}
+
+.captions p:hover{
+    color: #FF4545;
+    cursor: pointer;
+}

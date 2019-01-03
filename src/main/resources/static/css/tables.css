@@ -1,0 +1,117 @@
+#usertable, #table, #table1{
+    align-items: center;
+    text-align: center;
+    font-variant-ligatures: no-common-ligatures;
+    border-top: transparent;
+    border-left:none;
+    border-right:none;
+    vertical-align: bottom;
+    padding: 5px;
+    border-collapse: collapse;
+    font-weight: normal;
+    color: #474747;
+    font-family: Verdana, Arial, sans-serif;
+    object-position:center;
+    width: 100%;
+}
+#table{
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+#recruitertables{
+    margin-top: -130px !important;
+}
+.dataTables_wrapper{
+    margin-top: 80px;
+}
+#table1{
+    width: 100% !important;
+}
+.tablestyle th{
+    font-size: .9em;
+    font-family: Verdana, Arial, sans-serif !important;
+    color: black;
+    z-index:-1;
+}
+.tablestyle td{
+    font-size: .9em;
+}
+.tablestyle th, .tablestyle td{
+   /* border-bottom: 1px solid #dddddd;*/
+}
+.tablestyle th:hover{
+    color: red;
+}
+.tablestyle tr:hover{
+    font-weight: bolder;
+}
+.dataTables_info, .dataTables_previous, .dataTables_next, .dataTables_filter label, .dataTables_length, .dataTables_length select, .dataTables_length select option, .paginate_button{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: .9em;
+}
+td select, td select option{
+    font-family: Verdana, Arial, sans-serif
+}
+.dataTables_filter input:focus, .dataTables-length select:focus, .dataTables_length select options:focus{
+    outline-color: #FF4545;
+}
+#manualcandidate th:hover{
+    color: black;
+}
+#manualreferralform td input[type="text"]:focus{
+    outline-color: #FF4545;
+}
+#manualcandidate th{
+  text-align: left;
+}
+#manualreferralform label{
+    font-family: Verdana, Arial, sans-serif;
+}
+#manualreferralform tr:hover{
+    font-weight: normal;
+}
+
+/*buttons*/
+#tableupdate, #candidatesubmit{
+    width: 15%;
+    margin-left: 42.5%;
+    background-color: #FF4545;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    color: white;
+    margin-top: 15px;
+}
+#candidatesubmit{
+    width: 10%;
+    height: 4vh;
+    margin-left: 45%;
+    margin-top: 20px;
+    background-color: #FF4545;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+#tableupdate:hover, #candidatesubmit:hover{
+    background-color: red;
+    box-shadow: 0 0 15px 4px #FF4545;
+    cursor: pointer;
+}
+#tableupdate p, #candidatesubmit p{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+    color: white;
+}
+
+.dataTables_scrollBody{
+    z-index:1;
+    overflow-y:visible !important;
+    overflow-x:scroll !important;
+}
+.dataTables_scrollHead{
+    z-index:-1;
+
+}
+tbody{
+    overflow-x:scroll;
+}
