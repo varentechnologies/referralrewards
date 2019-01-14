@@ -18,7 +18,6 @@ public class MenuControllers {
 
   @GetMapping("/home")
   public String processHome(Model model) {
-    System.out.println("reached");
     return "index";
   }
 
