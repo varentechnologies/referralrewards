@@ -60,6 +60,14 @@
 
                 </a>
             </li>
+            <li>
+                <a href="history">
+                    <svg>
+                        <use xlink:href="images/icons.svg#info"></use>
+                    </svg>
+                    History
+                </a>
+            </li>
             <li id="current">
                 <a href="prizes">
 

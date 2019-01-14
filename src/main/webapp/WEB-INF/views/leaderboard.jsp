@@ -110,6 +110,14 @@
                 </a>
             </li>
             <li>
+                <a href="history">
+                    <svg>
+                        <use xlink:href="images/icons.svg#info"></use>
+                    </svg>
+                    History
+                </a>
+            </li>
+            <li>
                 <a href="prizes">
 
                     <svg><use xlink:href="images/icons.svg#present"></use></svg>
