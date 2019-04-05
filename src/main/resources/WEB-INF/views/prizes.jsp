@@ -198,7 +198,7 @@
             <p>Netgear Universal Wi-Fi<br>Range Extender</p>
             <p>Amazon Echo Dot &amp; <br>Echo Buttons</p>
             <p>Lunch with Marty Leshin</p>
-            <p>iHeart Radio Gift</p>
+            <p>Amazon Fire Stick</p>
         </div>
     </div>
 
